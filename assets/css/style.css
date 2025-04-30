@@ -31,14 +31,12 @@ h3 {
   color: var(--highlight-color);
 }
 
-/* Test */
+/* Navbar Style */
 
-/* .container,
-.row {
-  border: 2px solid black;
+#navbar {
+  background-color: var(--primary-color);
 }
 
-.col-12 {
-  border: 2px solid white;
-  background-color: lightgray;
-} */
+#navbar .logo {
+  width: 40px;
+}
