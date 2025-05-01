@@ -3,18 +3,15 @@
 
 /* CSS Variables */
 :root {
-  /* FONTS */
   --primary-font: 'Inter', sans-serif;
   --secondary-font: 'Macondo', cursive;
-
-  /* COLOURS */
-  --primary-color: #3a2620; /* Dark Brown */
-  --secondary-color: #aa9581; /* Sand  */
-  --highlight-color: #416a8e; /* Blue */
-  --light-highlight-color: #7a9fc2; /* Light Blue */
+  --primary-color: #3a2620; /* dark brown */
+  --secondary-color: #aa9581; /* light brown */
+  --highlight-color: #416a8e; /* blue */
+  --highlight-color-light: #7a9fc2; /* light blue */
 }
 
-/* Globla Styles */
+/* Global styles */
 
 body {
   font-family: var(--primary-font);
@@ -40,7 +37,12 @@ h2 {
   color: var(--highlight-color);
 }
 
-/* Navbar Style */
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Navbar */
 
 #navbar {
   background-color: var(--primary-color);
@@ -50,10 +52,6 @@ h2 {
   width: 30px;
 }
 
-.section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 /* Header */
 
 #header .lead {
@@ -72,65 +70,79 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* Game library cards */
+
 #new-games .card,
 #fav-games .card {
-  margin-bottom: 1.5rem;
+  border: none;
 }
 
-/* MEDIA QUERIES */
+/* Footer / contact */
 
+#contact {
+  background-color: var(--primary-color);
+  color: white;
+  padding-bottom: 3rem;
+}
+
+#contact h2 {
+  color: white;
+}
+
+#contact .sub-heading-color {
+  color: var(--highlight-color-light);
+}
+
+#contact i {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+#contact .social-links i {
+  color: var(--highlight-color-light);
+  font-size: 1.9rem;
+  transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+  color: var(--secondary-color);
+}
+
+#contact .table-dark * {
+  background-color: transparent;
+}
+
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+  /* Make all service cards the same height for consistency */
   #services .card-body {
     min-height: 191px;
   }
-
-  #new-games .card-body {
-    min-height: auto;
-  }
-
-  #fav-games .card-body {
-    min-height: 310px;
-  }
 }
 
+/* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
+  /* Make all service cards the same height for consistency */
   #services .card-body {
     min-height: auto;
   }
-
-  #new-games .card-body {
-    min-height: 100px;
-  }
-
-  #fav-games .card-body {
-    min-height: 100px;
-  }
 }
 
+/* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+  /* make all service cards the same height for consistency */
   #services .card-body {
-    min-height: 217px;
-  }
-
-  #new-games .card-body {
-    min-height: auto;
-  }
-
-  #fav-games .card-body {
-    min-height: 362px;
+    min-height: 220px;
   }
 }
 
+/* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
+  /* make all service cards the same height for consistency */
   #services .card-body {
-    min-height: 194px;
-  }
-
-  #new-games .card-body {
-    min-height: 290px;
-  }
-
-  #fav-games .card-body {
-    min-height: 314px;
+    min-height: 195px;
   }
 }
