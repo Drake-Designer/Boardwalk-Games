@@ -59,3 +59,41 @@ h2 {
 #header .lead {
   font-family: var(--secondary-font);
 }
+
+/* Services */
+
+#services .card-footer {
+  font-weight: bold;
+  color: var(--highlight-color);
+  background-color: transparent;
+}
+
+#services .card {
+  margin-bottom: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  #services .card-body {
+    min-height: 191px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #services .card-body {
+    min-height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #services .card-body {
+    min-height: 217px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #services .card-body {
+    min-height: 194px;
+  }
+}
