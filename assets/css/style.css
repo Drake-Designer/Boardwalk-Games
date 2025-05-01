@@ -72,11 +72,24 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+#new-games .card,
+#fav-games .card {
+  margin-bottom: 1.5rem;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
   #services .card-body {
     min-height: 191px;
+  }
+
+  #new-games .card-body {
+    min-height: auto;
+  }
+
+  #fav-games .card-body {
+    min-height: 310px;
   }
 }
 
@@ -84,16 +97,40 @@ h2 {
   #services .card-body {
     min-height: auto;
   }
+
+  #new-games .card-body {
+    min-height: 100px;
+  }
+
+  #fav-games .card-body {
+    min-height: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   #services .card-body {
     min-height: 217px;
   }
+
+  #new-games .card-body {
+    min-height: auto;
+  }
+
+  #fav-games .card-body {
+    min-height: 362px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
   #services .card-body {
     min-height: 194px;
+  }
+
+  #new-games .card-body {
+    min-height: 290px;
+  }
+
+  #fav-games .card-body {
+    min-height: 314px;
   }
 }
