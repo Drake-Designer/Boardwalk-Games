@@ -173,9 +173,11 @@ h2 {
   #events-table {
     font-size: 0.875rem;
   }
-  
-  #discount-text {
 
+  #discount-text {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
