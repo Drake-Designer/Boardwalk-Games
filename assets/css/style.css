@@ -141,6 +141,8 @@ h2 {
 #contact .social-links i {
   color: var(--highlight-color-light);
   font-size: 1.9rem;
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
@@ -167,6 +169,8 @@ h2 {
   #discount-text {
     margin: auto;
     margin-bottom: 1rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -199,14 +203,24 @@ h2 {
   }
 
   #events-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
 
   #join-event-div,
   #events-table-div {
-    display: flexbox;
+    display: -ms-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding: 20px;
   }
