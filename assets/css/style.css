@@ -39,8 +39,7 @@ h2 {
 }
 
 .section {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  padding-top: 4rem;
 }
 
 /* Buttons */
@@ -104,6 +103,10 @@ h2 {
   background-color: var(--highlight-color);
   color: white;
   font-weight: bold;
+}
+
+#book-button {
+  margin-bottom: 20px;
 }
 
 /* Game library cards */
