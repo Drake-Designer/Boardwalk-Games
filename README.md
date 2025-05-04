@@ -24,7 +24,7 @@ The website includes:
 
 ## 🌐 Live Site
 
-👉 [Check out the live site](https://drake-designer.github.io/boardwalk-games/)
+👉 [Check out the live site](https://drake-designer.github.io/Boardwalk-Games/)
 
 ---
 
